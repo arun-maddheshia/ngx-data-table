@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Set Style for NgSelect which are appended to body with custom class  */
+.ng-select-outside {
+  min-width: 130px;
+}
+
+.ng-select-dropdown-outer {
+  min-width: 150px;
+}
+
+.ng-select.focused:not(.opened)>.ng-control {
+  box-shadow: none;
+  border-color: #ccc;
+}
+
+.ng-select .ng-control .ng-value-container .ng-placeholder {
+  color: #b0bacd;
+}
+
+/* Select Hover/Marked background  */
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+  background-color: #eafaf1;
+  white-space: normal;
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected {
+  background-color: #43bf9a;
+  border-bottom: 1px solid #43bf9a;
+  color: #fff;
+}
+
+/* NgSelect Footer Template */
+.ng-select .ng-dropdown-footer button {
+  background: #fff;
+  border: 0;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #01af69;
+  outline: none;
+}
+
+.ng-select .ng-dropdown-footer .icon-plus {
+  font-size: 9px;
+  position: relative;
+  top: -1px;
+}
+
+/* Set Min Width for ngselect dropdown panel so 3/4 character option not looks compact */
+.ng-dropdown-panel {
+  min-width: 150px;
+}
+
+.ng-select .ng-select-container .ng-value-container {
+  font-size: 14px;
+  padding-left: 0;
+}
+
+.datatable-header-cell-template-wrap {
+  padding: 0 10px;
+}
